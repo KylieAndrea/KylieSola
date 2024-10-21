@@ -2,9 +2,11 @@
 
 void main(){
 
-  var n1 = 'hola';
-  var n2 = 'mundo';
-  var n3 = 123;
+  int n1 = 123;
+  double n2 = 1.0;
+  String n3 = 'hola';
+  dynamic n4 = 5162;
+  dynamic n5 = 'mundo';
+  bool n6 = true;
 
-  print('$n1 $n2 - $n3');
 }

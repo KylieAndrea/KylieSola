@@ -9,10 +9,8 @@ String? marca;
 String? creador;
 
   Maquillaje(String marca, String creador){
-
   this.marca = marca;
   this.creador = creador;
-
   }
 }
 
