@@ -1,0 +1,20 @@
+//en este archivo solo se encontraran los algoritmos de visual basic sin embargo ya han sido probados y ejecutados correctamente//
+
+Sub registro()
+
+Var = da.Cells(1, 4)
+
+ da.Cells(Var, 1) = re.Cells(4, 4)
+ da.Cells(Var, 2) = re.Cells(6, 4)
+ da.Cells(Var, 3) = re.Cells(8, 4)
+ 
+ MsgBox "guardado.."
+ Var = Var + 1
+ 
+ re.Cells(4, 4) = Empty
+ re.Cells(6, 4) = Empty
+ re.Cells(8, 4) = Empty
+
+da.Cells(1, 4) = Var
+
+End Sub

@@ -1,0 +1,22 @@
+//en este archivo solo se encontraran los algoritmos de visual basic sin embargo ya han sido probados y ejecutados correctamente//
+
+Sub correr()
+
+MsgBox "ingrese la cantidad de personas"
+cant = InputBox("cantidad")
+
+    For i = 1 To cant
+    
+    Name = Cells(i, 1)
+    
+        For k = 1 To Len(Name)
+        
+        Var = Var + 1
+        var2 = Mid(Name, Var, 1)
+        Cells(i, k + 1) = var2
+    
+        Next k
+    Var = 0
+
+    Next i
+End Sub

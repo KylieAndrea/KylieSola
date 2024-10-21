@@ -1,0 +1,66 @@
+//en este archivo solo se encontraran los algoritmos de visual basic sin embargo ya han sido probados y ejecutados correctamente//
+
+Sub hacer()
+
+h = 0
+acum = 0
+acum2 = 0
+variable = 0
+Count = 0
+cont2 = 0
+
+    Do
+    
+        MsgBox "ingrese la cantidad aportada por el aprendiz"
+        variable = InputBox("variable")
+        
+            If variable >= 5000 Then
+            
+                cont = cont + 1
+                acum = acum + variable
+                MsgBox ("acum:" & acum)
+                
+            Else
+            
+                cont2 = cont2 + 1
+                acum2 = acum2 + variable
+                MsgBox ("acum2:" & acum2)
+                
+            End If
+            
+        h = h + variable
+        MsgBox (h)
+        
+    Loop While h < 500000
+
+cantidad = acum + acum2
+
+promedio = 0
+promedio2 = 0
+promedio3 = 0
+If (cantidad > 0 And h > 0) Then
+    promedio = cantidad / h
+End If
+If (acum > 0 And cont > 0) Then
+    promedio2 = acum / cont
+End If
+If (acum2 > 0 And cont2 > 0) Then
+    MsgBox (acum2 & " - " & [cont2])
+    promedio3 = acum2 / cont2
+End If
+MsgBox ("paso")
+
+MsgBox "la cantidad total de aportes es de " & cantidad
+MsgBox "el promedio total es de " & promedio
+
+MsgBox "los que aportaron 5000 o mas = " & cont
+MsgBox "total de aportado = " & acum
+MsgBox "promedio = " & promedio2
+    
+MsgBox "los que aportaron menos de 5000 = " & cont2
+MsgBox "total de aportado = " & acum2
+MsgBox "promedio = " & promedio3
+
+
+End Sub
+

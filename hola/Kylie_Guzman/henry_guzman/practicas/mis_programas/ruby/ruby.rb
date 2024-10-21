@@ -1,0 +1,9 @@
+puts"Nos";
+puts"tiene";
+puts"que";
+puts"gustar";
+puts"nosotros";
+puts"a";
+puts"no";
+puts"al";
+puts"resto";

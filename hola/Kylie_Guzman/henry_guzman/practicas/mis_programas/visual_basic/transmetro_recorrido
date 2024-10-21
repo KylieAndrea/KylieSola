@@ -1,0 +1,28 @@
+//en este archivo solo se encontraran los algoritmos de visual basic sin embargo ya han sido probados y ejecutados correctamente//
+
+Sub recorrido()
+nombre = Cells(2, 2)
+
+    For a = 1 To 8
+    Cells(a + 1, a + 1) = nombre
+        For j = 1 To 100000000
+        Next j
+    Cells(a, a) = ""
+    Next a
+    
+    For b = 9 To 2 Step -1
+    Cells(b, 9) = nombre
+        For k = 1 To 100000000
+        Next k
+    Cells(b + 1, 9) = ""
+    Next b
+    
+    For c = 9 To 2 Step -1
+    Cells(2, c) = nombre
+        For l = 1 To 100000000
+        Next l
+    Cells(2, c + 1) = Empty
+    Next c
+    
+End Sub
+

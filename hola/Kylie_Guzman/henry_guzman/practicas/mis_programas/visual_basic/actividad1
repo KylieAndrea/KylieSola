@@ -1,0 +1,18 @@
+//en este archivo solo se encontraran los algoritmos de visual basic sin embargo ya han sido probados y ejecutados correctamente//
+
+Sub correr()
+
+nombre = Cells(1, 1)
+
+    For v = 1 To 9
+    
+    Cells(1, v + 1) = nombre
+    
+        For p = 1 To 100000000
+        Next p
+        
+    Cells(1, v) = ""
+    
+    Next v
+End Sub
+
