@@ -10,12 +10,31 @@ class MyProgram extends StatelessWidget {
     return MaterialApp(
       title: 'MY PRIMER PROGRAMA',
       home: Scaffold(
-        appBar: AppBar(title: Text('NICOLE')),
-        body: Column(
-          children: [
+        appBar: AppBar( 
+          title: Center(child: Text('INICIO')),
+          backgroundColor: Colors.pink,
+          foregroundColor: Colors.white,
+        ),
+        body: Center(child: Column(
+          children: [ 
+            SizedBox(height: 10),
+            Text('Ingrese numero de usuario'),
+            SizedBox(height: 5),
+            SizedBox(
+              width: 150,
+              child: TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                  icon: Icon(Icons.account_circle_rounded),
+                  border: OutlineInputBorder(),
+                  labelText: 'Numero',
+                ),
+              ),
+            ),
           ],
         )
       ),
-    );
+    )
+   );
   }
 }
