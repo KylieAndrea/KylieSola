@@ -1,40 +1,35 @@
 import 'package:flutter/material.dart';
 
 void main(){
-  runApp(MyProgram());
+  runApp(Process());
 }
 
-class MyProgram extends StatelessWidget {
-
+class Process extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'MY PRIMER PROGRAMA',
       home: Scaffold(
-        appBar: AppBar( 
-          title: Center(child: Text('INICIO')),
-          backgroundColor: Colors.pink,
-          foregroundColor: Colors.white,
-        ),
-        body: Center(child: Column(
-          children: [ 
-            SizedBox(height: 10),
-            Text('Ingrese numero de usuario'),
-            SizedBox(height: 5),
-            SizedBox(
-              width: 150,
-              child: TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  icon: Icon(Icons.account_circle_rounded),
-                  border: OutlineInputBorder(),
-                  labelText: 'Numero',
+        backgroundColor: Colors.deepPurple[100],
+        body: Center(
+          child: Column(
+            children: [
+              SizedBox(height: 270,),
+              Text(
+                'Cargando datos...',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 17,
+                  color: Colors.white,
+                  )
                 ),
-              ),
-            ),
-          ],
+              SizedBox(height: 10,),
+              CircularProgressIndicator(
+                backgroundColor: Colors.deepPurple[300],
+                valueColor: AlwaysStoppedAnimation<Color>(Colors.deepPurple),
+              )
+            ],
+          ),
         )
       ),
-    )
-   );
+    );
   }
 }
