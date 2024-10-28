@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main(){
-  runApp(Inicio());
+  runApp(Home());
 }
 
-class Inicio extends StatelessWidget {
+class Home extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return MaterialApp(
