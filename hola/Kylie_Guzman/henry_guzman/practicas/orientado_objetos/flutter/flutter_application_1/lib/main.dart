@@ -23,7 +23,14 @@ class MyProgram extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(
       title: 'Mi Programa Dart',
-      home: Scaffold(),
+      home: Scaffold(
+        body: Column(
+          children: [
+            Text('hola'),
+            Text('mundo')
+          ],
+        )
+      ),
     );
   }
 }
