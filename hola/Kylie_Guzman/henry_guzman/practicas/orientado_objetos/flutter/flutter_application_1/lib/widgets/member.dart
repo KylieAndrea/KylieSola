@@ -24,16 +24,12 @@ class Member extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('hola'),
-                Text('hola'),
-                Text('hola'),
-                Text('hola'),
-                Text('hola'),
-                Text('hola'),
-                Text('hola'),
-                Text('hola'),
-                Text('hola'),
-              ],
+                Text('AlbumId: '),
+                Text('Id: '),
+                Text('Title: '),
+                Text('Url: '),
+                Text('ThumbnailUrl: '),
+                ],
             )
           ],
         ),
