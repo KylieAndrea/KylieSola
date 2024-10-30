@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'dart:convert';
 
 import 'package:flutter_application_1/models/photos.dart';
 import 'package:flutter_application_1/widgets/home.dart';
@@ -26,13 +25,13 @@ class MyProgram extends StatelessWidget{
       home: Scaffold(
         body: FutureBuilder(
           future: hola(),
-          builder: (BuildContext (context, AsyncSnapshot<String> snapshot)){
-            if(snapshot.){
-            }else if(snapshot.connectionState == ConnectionState.waiting){
+          builder: (BuildContext context, AsyncSnapshot<String> snapshot){
+            if(snapshot.connectionState == ConnectionState.waiting){
               return Process();
             }else if(snapshot.hasError){
               return Error();
             }else{
+              Photos photos = snapshot.data;
               return Member();
             }
           }

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-
-void main() {
-  runApp(Member());
-}
+import 'package:flutter_application_1/models/photos.dart';
 
 class Member extends StatelessWidget {
+  final Photos photo;
+  Member({required this.photo});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,11 +24,11 @@ class Member extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('AlbumId: '),
-                Text('Id: '),
-                Text('Title: '),
-                Text('Url: '),
-                Text('ThumbnailUrl: '),
+                Text('AlbumId: ${photo.albumId}'),
+                Text('Id: ${photo.id}'),
+                Text('Title: ${photo.title}'),
+                Text('Url: ${photo.url}'),
+                Text('ThumbnailUrl: ${photo.thumbnailUrl}'),
                 ],
             )
           ],
