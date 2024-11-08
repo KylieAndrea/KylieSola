@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/models/photos.dart';
 
-class Member extends StatelessWidget {
+class MemberPhotos extends StatelessWidget {
   final Photos photo;
-  Member({required this.photo});
+  MemberPhotos({required this.photo});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class Member extends StatelessWidget {
                 Text('Title: ${photo.title}'),
                 Text('Url: ${photo.url}'),
                 Text('ThumbnailUrl: ${photo.thumbnailUrl}'),
-                ],
+              ],
             )
           ],
         ),
