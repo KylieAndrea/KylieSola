@@ -48,7 +48,7 @@ class IngresarUsers extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => HomeUsers(id: idee),
+                        builder: (context) => HomeUsers(cod: idee),
                       ),
                     );
                   } else {

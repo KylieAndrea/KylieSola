@@ -47,7 +47,7 @@ class IngresarPhotos extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HomePhotos(id: idee),
+                      builder: (context) => HomePhotos(cod: idee),
                     ),
                   );
                 } else {

@@ -47,7 +47,7 @@ class IngresarTodos extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HomeTodos(id: idee),
+                      builder: (context) => HomeTodos(cod: idee),
                     ),
                   );
                 } else {

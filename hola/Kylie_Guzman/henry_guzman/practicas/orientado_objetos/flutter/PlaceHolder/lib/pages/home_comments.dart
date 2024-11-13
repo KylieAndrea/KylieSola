@@ -6,12 +6,12 @@ import 'package:flutter_1/widget/error.dart';
 import 'package:http/http.dart' as http;
 
 class HomeComments extends StatelessWidget {
-  final int id;
+  final int cod;
 
-  const HomeComments({super.key, required this.id});
+  const HomeComments({super.key, required this.cod});
 
   Future<Comments> fetchData() async {
-    final url = Uri.parse('https://jsonplaceholder.typicode.com/comments/$id');
+    final url = Uri.parse('https://jsonplaceholder.typicode.com/comments/$cod');
     final response = await http.get(url);
     if (response.statusCode == 200) {
       return Comments(response.body);

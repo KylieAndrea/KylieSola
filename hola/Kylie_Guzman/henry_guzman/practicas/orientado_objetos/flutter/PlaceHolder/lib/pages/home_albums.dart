@@ -6,12 +6,12 @@ import 'package:flutter_1/widget/error.dart';
 import 'package:http/http.dart' as http;
 
 class HomeAlbums extends StatelessWidget {
-  final int id;
+  final int cod;
 
-  const HomeAlbums({super.key, required this.id});
+  const HomeAlbums({super.key, required this.cod});
 
   Future<Albums> fetchData() async {
-    final url = Uri.parse('https://jsonplaceholder.typicode.com/albums/$id');
+    final url = Uri.parse('https://jsonplaceholder.typicode.com/albums/$cod');
     final response = await http.get(url);
     if (response.statusCode == 200) {
       return Albums(response.body);

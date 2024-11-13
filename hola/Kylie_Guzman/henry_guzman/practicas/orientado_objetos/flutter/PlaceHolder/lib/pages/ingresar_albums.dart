@@ -47,7 +47,7 @@ class IngresarAlbums extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HomeAlbums(id: idee),
+                      builder: (context) => HomeAlbums(cod: idee),
                     ),
                   );
                 } else {

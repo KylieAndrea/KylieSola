@@ -47,7 +47,7 @@ class IngresarPosts extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HomePosts(id: idee),
+                      builder: (context) => HomePosts(cod: idee),
                     ),
                   );
                 } else {

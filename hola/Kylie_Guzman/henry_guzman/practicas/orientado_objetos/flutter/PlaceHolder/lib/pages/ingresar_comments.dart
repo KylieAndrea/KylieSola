@@ -47,7 +47,7 @@ class IngresarComments extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HomeComments(id: idee),
+                      builder: (context) => HomeComments(cod: idee),
                     ),
                   );
                 } else {
