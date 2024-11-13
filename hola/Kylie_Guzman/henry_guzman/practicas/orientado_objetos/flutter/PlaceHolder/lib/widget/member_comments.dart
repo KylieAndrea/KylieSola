@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_1/models/photo.dart';
-import 'package:flutter_application_1/models/photos.dart';
+import 'package:flutter_1/models/comments.dart';
 
-class MemberPhotos extends StatelessWidget {
-  final Photos photo;
+class MemberCommenst extends StatelessWidget {
+  final Comments comments;
 
-  MemberPhotos({super.key, required this.photo});
+  MemberCommenst({super.key, required this.comments});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +14,7 @@ class MemberPhotos extends StatelessWidget {
             children: [
               Icon(Icons.account_circle_outlined),
               SizedBox(width: 20),
-              Text('Usuario')
+              Text('Comentario')
             ],
           ),
           backgroundColor: Colors.deepPurple[300],
@@ -28,19 +27,14 @@ class MemberPhotos extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
-                SizedBox(height: 20),
-                Image.network(
-                  '${photo.url}',
-                  width: 100.0,
-                ),
                 SizedBox(
-                  height: 15,
+                  height: 30,
                 ),
-                Text('AlbumId: ${photo.albumId}'),
-                Text('Id: ${photo.id}'),
-                Text('Title: ${photo.title}'),
-                Text('Url: ${photo.url}'),
-                Text('ThumbnailUrl: ${photo.thumbnailUrl}',
+                Text('PostId: ${comments.postId}'),
+                Text('Id: ${comments.id}'),
+                Text('Name: ${comments.name}'),
+                Text('Email: ${comments.email}'),
+                Text('Body: ${comments.body}',
                     style: TextStyle(fontWeight: FontWeight.bold)),
               ],
             ),

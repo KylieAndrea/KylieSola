@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_1/models/photo.dart';
-import 'package:flutter_application_1/models/photos.dart';
+import 'package:flutter_1/models/photos.dart';
 
 class MemberPhotos extends StatelessWidget {
-  final Photos photo;
+  final Photos photos;
 
-  MemberPhotos({super.key, required this.photo});
+  MemberPhotos({super.key, required this.photos});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +14,7 @@ class MemberPhotos extends StatelessWidget {
             children: [
               Icon(Icons.account_circle_outlined),
               SizedBox(width: 20),
-              Text('Usuario')
+              Text('Foto')
             ],
           ),
           backgroundColor: Colors.deepPurple[300],
@@ -30,17 +29,17 @@ class MemberPhotos extends StatelessWidget {
               children: [
                 SizedBox(height: 20),
                 Image.network(
-                  '${photo.url}',
+                  '${photos.url}',
                   width: 100.0,
                 ),
                 SizedBox(
                   height: 15,
                 ),
-                Text('AlbumId: ${photo.albumId}'),
-                Text('Id: ${photo.id}'),
-                Text('Title: ${photo.title}'),
-                Text('Url: ${photo.url}'),
-                Text('ThumbnailUrl: ${photo.thumbnailUrl}',
+                Text('AlbumId: ${photos.albumId}'),
+                Text('Id: ${photos.id}'),
+                Text('Title: ${photos.title}'),
+                Text('Url: ${photos.url}'),
+                Text('ThumbnailUrl: ${photos.thumbnailUrl}',
                     style: TextStyle(fontWeight: FontWeight.bold)),
               ],
             ),

@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_1/models/photo.dart';
-import 'package:flutter_application_1/models/photos.dart';
+import 'package:flutter_1/models/users.dart';
 
-class MemberPhotos extends StatelessWidget {
-  final Photos photo;
+class MemberUsers extends StatelessWidget {
+  final Users users;
 
-  MemberPhotos({super.key, required this.photo});
+  MemberUsers({
+    super.key,
+    required this.users,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -28,19 +30,18 @@ class MemberPhotos extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
-                SizedBox(height: 20),
-                Image.network(
-                  '${photo.url}',
-                  width: 100.0,
-                ),
                 SizedBox(
-                  height: 15,
+                  height: 30,
                 ),
-                Text('AlbumId: ${photo.albumId}'),
-                Text('Id: ${photo.id}'),
-                Text('Title: ${photo.title}'),
-                Text('Url: ${photo.url}'),
-                Text('ThumbnailUrl: ${photo.thumbnailUrl}',
+                Text('user'),
+                Text('Id: ${users.id}'),
+                Text('Name: ${users.name}'),
+                Text('username: ${users.username}'),
+                Text('Email: ${users.email}'),
+                Text('Address: ${users.address}'),
+                Text('Phone: ${users.phone}'),
+                Text('Website: ${users.website}'),
+                Text('Company: ${users.company}',
                     style: TextStyle(fontWeight: FontWeight.bold)),
               ],
             ),

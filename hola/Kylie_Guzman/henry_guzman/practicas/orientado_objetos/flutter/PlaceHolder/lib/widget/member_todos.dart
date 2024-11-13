@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_1/models/photo.dart';
-import 'package:flutter_application_1/models/photos.dart';
+import 'package:flutter_1/models/todos.dart';
 
-class MemberPhotos extends StatelessWidget {
-  final Photos photo;
+class MemberTodos extends StatelessWidget {
+  final Todos todos;
 
-  MemberPhotos({super.key, required this.photo});
+  MemberTodos({super.key, required this.todos});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +14,7 @@ class MemberPhotos extends StatelessWidget {
             children: [
               Icon(Icons.account_circle_outlined),
               SizedBox(width: 20),
-              Text('Usuario')
+              Text('Todos')
             ],
           ),
           backgroundColor: Colors.deepPurple[300],
@@ -28,19 +27,13 @@ class MemberPhotos extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
-                SizedBox(height: 20),
-                Image.network(
-                  '${photo.url}',
-                  width: 100.0,
-                ),
                 SizedBox(
-                  height: 15,
+                  height: 30,
                 ),
-                Text('AlbumId: ${photo.albumId}'),
-                Text('Id: ${photo.id}'),
-                Text('Title: ${photo.title}'),
-                Text('Url: ${photo.url}'),
-                Text('ThumbnailUrl: ${photo.thumbnailUrl}',
+                Text('UserId: ${todos.userId}'),
+                Text('Id: ${todos.id}'),
+                Text('Title: ${todos.title}'),
+                Text('Completed: ${todos.completed}',
                     style: TextStyle(fontWeight: FontWeight.bold)),
               ],
             ),
