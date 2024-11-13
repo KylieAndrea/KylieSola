@@ -1,39 +1,49 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/models/photos.dart';
+import 'package:flutter_1/models/photo.dart';
 
-class MemberPhotos extends StatelessWidget {
-  final Photos photo;
-  MemberPhotos({required this.photo});
+class Member extends StatelessWidget {
+  final Photo photo;
+
+  Member({super.key, required this.photo});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
-          title: Text('USUARIO'),
+          title: Row(
+            children: [
+              Icon(Icons.account_circle_outlined),
+              SizedBox(width: 20),
+              Text('Usuario')
+            ],
+          ),
           backgroundColor: Colors.deepPurple[300],
           foregroundColor: Colors.white,
         ),
         body: Row(
           children: [
-            Icon(
-              Icons.account_box_rounded,
-              size: 200,
-              color: Colors.blueGrey[100],
-            ),
+            SizedBox(width: 20),
             Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
               children: [
+                SizedBox(height: 20),
+                Image.network(
+                  '${photo.url}',
+                  width: 100.0,
+                ),
+                SizedBox(
+                  height: 15,
+                ),
                 Text('AlbumId: ${photo.albumId}'),
                 Text('Id: ${photo.id}'),
                 Text('Title: ${photo.title}'),
                 Text('Url: ${photo.url}'),
-                Text('ThumbnailUrl: ${photo.thumbnailUrl}'),
+                Text('ThumbnailUrl: ${photo.thumbnailUrl}',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
               ],
-            )
+            ),
           ],
-        ),
-      ),
-    );
+        ));
   }
 }
