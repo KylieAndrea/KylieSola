@@ -12,7 +12,7 @@ class MemberPosts extends StatelessWidget {
         appBar: AppBar(
           title: Row(
             children: [
-              Icon(Icons.account_circle_outlined),
+              Icon(Icons.visibility),
               SizedBox(width: 20),
               Text('Post')
             ],

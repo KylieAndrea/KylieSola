@@ -9,7 +9,7 @@ class Process extends StatelessWidget {
             child: Column(
               children: [
                 SizedBox(
-                  height: 270,
+                  height: 300,
                 ),
                 Text('Cargando datos...',
                     style: TextStyle(

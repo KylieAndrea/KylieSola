@@ -39,7 +39,7 @@ class Address {
   }
 
   String toString() {
-    return '["city": ${city}, "suite": ${suite}, "street": ${street}, "zipcode": ${zipcode}, ${geo}]';
+    return 'city: ${city}, suite: ${suite}, street: ${street}, zipcode: ${zipcode}, ${geo}';
   }
 }
 
@@ -53,7 +53,7 @@ class Geo {
   }
 
   String toString() {
-    return '"geo": ["lat": ${lat}, "lng": ${lng}}]';
+    return 'geo: lat: ${lat}, lng: ${lng}';
   }
 }
 
@@ -69,6 +69,6 @@ class Company {
   }
 
   String toString() {
-    return '["name": ${name}, "catchPhrase": ${catchPhrase}, "bs": ${bs}]';
+    return 'name: ${name}, catchPhrase: ${catchPhrase}, bs: ${bs}';
   }
 }

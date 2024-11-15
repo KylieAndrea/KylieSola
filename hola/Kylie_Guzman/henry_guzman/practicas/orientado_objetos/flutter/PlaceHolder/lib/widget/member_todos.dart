@@ -11,11 +11,7 @@ class MemberTodos extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Row(
-            children: [
-              Icon(Icons.account_circle_outlined),
-              SizedBox(width: 20),
-              Text('Todos')
-            ],
+            children: [Icon(Icons.list), SizedBox(width: 20), Text('Todos')],
           ),
           backgroundColor: Colors.deepPurple[300],
           foregroundColor: Colors.white,

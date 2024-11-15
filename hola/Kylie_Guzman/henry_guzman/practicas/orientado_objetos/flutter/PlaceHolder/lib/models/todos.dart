@@ -9,7 +9,7 @@ class Todos {
   Todos(String jsonString) {
     Map<String, dynamic> map = jsonDecode(jsonString);
     this.userId = map['userId'];
-    this.id = map['Id'];
+    this.id = map['id'];
     this.title = map['title'];
     this.completed = map['completed'];
   }

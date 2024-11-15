@@ -12,7 +12,7 @@ class MemberCommenst extends StatelessWidget {
         appBar: AppBar(
           title: Row(
             children: [
-              Icon(Icons.account_circle_outlined),
+              Icon(Icons.comment_rounded),
               SizedBox(width: 20),
               Text('Comentario')
             ],

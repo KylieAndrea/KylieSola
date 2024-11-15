@@ -10,7 +10,7 @@ class Comments {
   Comments(String jsonString) {
     Map<String, dynamic> map = jsonDecode(jsonString);
     this.postId = map['postId'];
-    this.id = map['Id'];
+    this.id = map['id'];
     this.name = map['name'];
     this.email = map['email'];
     this.body = map['body'];

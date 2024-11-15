@@ -12,7 +12,7 @@ class MemberAlbums extends StatelessWidget {
         appBar: AppBar(
           title: Row(
             children: [
-              Icon(Icons.account_circle_outlined),
+              Icon(Icons.collections),
               SizedBox(width: 20),
               Text('Album')
             ],
@@ -30,7 +30,7 @@ class MemberAlbums extends StatelessWidget {
                 SizedBox(
                   height: 30,
                 ),
-                Text('userId: ${albums.userId}'),
+                Text('UserId: ${albums.userId}'),
                 Text('Id: ${albums.id}'),
                 Text('Title: ${albums.title}',
                     style: TextStyle(fontWeight: FontWeight.bold)),

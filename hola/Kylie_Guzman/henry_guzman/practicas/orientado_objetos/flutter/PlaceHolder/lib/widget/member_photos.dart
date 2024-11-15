@@ -12,7 +12,7 @@ class MemberPhotos extends StatelessWidget {
         appBar: AppBar(
           title: Row(
             children: [
-              Icon(Icons.account_circle_outlined),
+              Icon(Icons.camera_alt),
               SizedBox(width: 20),
               Text('Foto')
             ],
