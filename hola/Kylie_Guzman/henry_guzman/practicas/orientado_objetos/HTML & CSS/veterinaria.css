@@ -1,0 +1,127 @@
+header{
+    height: 170px;
+}
+header img{
+    height: 170px;
+    width: 5000px;
+    max-width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: rgb(9, 61, 52);
+    margin-bottom: 15px;
+}
+section{
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+.section2{
+    flex: 2;
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+article, .articulo2{
+    height: 200px;
+    width: 95%;
+    background-color: rgb(253, 255, 134);
+    display: block;
+    margin-bottom: 55px;
+    margin: 8px; 
+    border-radius: 20px 20px 20px 20px;
+}
+.section4 {
+    display: flex;           
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start;
+}
+img{
+    margin-right: 20px;
+    width: 125px;
+    height:125px;
+    border-radius: 15px; 
+    max-width: 100%;
+    border: black 2px solid;
+}
+.header2{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 27px;
+    background-color: rgb(253, 255, 134);
+    font-size: 22px;
+    border-radius: 20px 20px 0 0;
+}
+aside{
+    flex: 1;
+    height: 420px;
+    background-color: rgb(12, 104, 76);
+    border-radius: 20px 20px 20px 20px;
+}
+label{
+    margin-top: 10px;
+    float: left;
+    color: rgb(226, 226, 226);
+    font-size: 22px;
+    margin-left: 40px;
+}
+input{
+    margin-top: 10px;
+    height: 20px;
+    width: 170px;
+    float: inline-end;
+    margin-right: 40px;
+}
+.input2{
+    margin-bottom: 30px;
+    float: inherit;
+    width: 100px;
+}
+.header3 {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 50px;
+    color: rgb(226, 226, 226);
+    font-size: 22px;
+    background-color: rgb(0, 36, 30);
+    margin-bottom: 20px;
+    border-radius: 20px 20px 0 0;
+}
+footer{
+    height: 80px;
+    color: rgb(111, 163, 155);
+    background-color: rgb(9, 61, 52);
+}
+footer p {
+    margin: 0;
+    line-height: 1.0;
+}
+a{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+.a2{
+    font-size: 15px;
+    color: rgb(12, 104, 76);
+}
+.section4 p{
+    margin-left: 20px;
+}
+button{
+    margin-top: 45px;
+    padding: 10px 60px;
+}
+button:active{
+    background-color: grey;
+    color: white;
+}
